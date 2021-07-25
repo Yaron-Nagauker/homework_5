@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="D:/node scripts/homework_4/products.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="844"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,8:mainPRODUCTS"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE PRODUCTS (
+	ID INTEGER PRIMARY KEY AUTOINCREMENT,
+	TITLE TEXT NOT NULL,
+	PRICE REAL NOT NULL,
+	RATING INT NOT NULL
+);</sql><sql name="SQL 2">INSERT INTO PRODUCTS (TITLE, PRICE, RATING)
+VALUES ('Motherboard', 250, 4.5);
+INSERT INTO PRODUCTS (TITLE, PRICE, RATING)
+VALUES ('Graphic-card', 410, 5);
+INSERT INTO PRODUCTS (TITLE, PRICE, RATING)
+VALUES ('SSD-drive', 350, 4.0);
+INSERT INTO PRODUCTS (TITLE, PRICE, RATING)
+VALUES ('pc-case', 200, 4.3);
+INSERT INTO PRODUCTS (TITLE, PRICE, RATING)
+VALUES ('Power-Supply', 350, 3.9);</sql><sql name="SQL 3">UPDATE products
+SET RATING=4.8, PRICE=280
+WHERE ID=5;</sql><sql name="SQL 4">DELETE FROM PRODUCTS
+WHERE id = 5;</sql><current_tab id="3"/></tab_sql></sqlb_project>
